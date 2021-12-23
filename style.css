@@ -1,0 +1,109 @@
+body{
+    margin: 0;
+    background-color: rgba(70, 62, 52, 0.877);
+}
+
+div{
+    margin: 0;
+    padding: 0;
+}
+
+.main-game{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.status{
+    display: flex;
+     align-items: center;
+     justify-content: space-around;
+    background: #000000;
+    color: white;
+    height: 40px;
+}
+
+.status__start{
+    cursor: pointer;
+}
+
+.genius{
+    display: grid;
+    grid-template-areas: 'verde vermelho'
+    'amarelo azul';
+    grid-gap: 10px;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    background-color: #000000;
+    border-radius: 100%;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+}
+
+.blue{
+    grid-area: azul;
+    background-color: rgb(22, 22, 97);
+    border-bottom-right-radius: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.red{
+    grid-area: vermelho;
+    background-color: rgb(119, 1, 1);
+    border-top-right-radius: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.yellow{
+    grid-area: amarelo;
+    background-color: rgb(164, 167, 0);
+    border-bottom-left-radius: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.green{
+    grid-area: verde;
+    background-color: green;
+    border-top-left-radius: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.selected{
+    filter: brightness(250%);
+}
+
+.modal{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(71, 59, 59, 0.699);
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal__message{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
